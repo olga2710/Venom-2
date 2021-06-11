@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <script src="script/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
 </head>
 <body class="blood">
     <div class="container">
@@ -17,6 +21,15 @@
                 <img width="46px" height="71px" src="img/logo.png" alt="logo-venom" class="logo-img">
             </a>
             <nav class="nav">
+                <button class="menu-button">
+                    <span class="menu-button-text">меню</span>
+                    <img src="img/burger-menu.svg" alt="icon: menu-icon" class="menu-button-icon">
+                </button>
+                <!-- /.menu-button -->
+                <button class="menu-close">
+                    <span class="menu-close-text">закрыть</span>
+                    <img src="img/close.svg" alt="icon:close">
+                </button>
                 <ul class="nav-menu">
                     <li class="nav-menu-item"><a href="about.html" class="nav-menu-link">о фильме</a></li>
                     <li class="nav-menu-item"><a href="treiler.html" class="nav-menu-link">трейлер</a></li>
@@ -40,10 +53,10 @@
             </div>
             <!-- /.hero-text -->
             <div class="button-group">
-                <button class="button button-primery">
+                <a data-fancybox href="https://www.youtube.com/embed/Othd8W8o3t0" class="button button-primery">
                     <img width="15" height="15" src="img/play.svg" alt="icon:Play" class="button-icon">
                     <span class="button-text">смотреть трейлер</span>
-                </button>
+                </a>
                 <a href="trailer.html" class="button button-link">
                     <img width="15"src="img/ticket.svg" alt="icon: Ticket" class="button-icon">
                     <span class="button-text"> билеты на премьеру</span>
